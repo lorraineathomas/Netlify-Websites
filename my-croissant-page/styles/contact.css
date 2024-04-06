@@ -1,0 +1,14 @@
+body {
+    background-color: #F8E8A6;
+    text-align: center;
+}
+
+.links {
+    display: block;
+    margin-top: 20px;
+}
+
+.contact {
+    color: green;
+    margin: 20px 10px;
+}

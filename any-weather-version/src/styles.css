@@ -1,0 +1,124 @@
+body {
+    background: radial-gradient(
+      circle,
+      rgba(121, 163, 177, 1) 4%,
+      rgba(208, 232, 242, 1) 100%
+    );
+    color: #456268;
+    font-family: "Comfortaa", cursive;
+  }
+  
+  h1 {
+    font-family: "Monoton", cursive;
+    font-size: 70px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  h6 {
+    text-align: center;
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  small {
+    font-size: 20px;
+  }
+
+  footer {
+    display: block;
+    text-align: right;
+  }
+  
+  .icon-first,
+  .icon-second,
+  .icon-third,
+  .icon-fourth,
+  .icon-fifth {
+    display: block;
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .card {
+    background: #fcf8ec;
+    border: none;
+  }
+  
+  .container {
+    margin: 10px auto;
+  }
+  
+  .city-buttons {
+    background: #79a3b1;
+    border: none;
+    border-radius: 10px;
+    color: #40394a;
+    display: block;
+    font-weight: bold;
+    margin: 2px auto;
+    padding: 10px;
+  }
+  
+  .searchbar-submit,
+  .searchbar-current,
+  .celcius-fahrenheit {
+    background: #79a3b1;
+    border: none;
+    border-radius: 10px;
+    color: #40394a;
+    height: 40px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .celcius-fahrenheit {
+    font-size: 20px;
+  }
+  
+  .city-buttons:hover,
+  .searchbar-submit:hover,
+  .searchbar-current:hover,
+  .celcius-fahrenheit:hover {
+    background: white;
+    color: #ff6701;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .weather-icon {
+    font-size: 50px;
+  }
+  
+  .weather-temperature {
+    font-size: 35px;
+  }
+  
+  .chance-of-rain {
+    font-size: 20px;
+  }
+  
+  .searchbar {
+    text-align: left;
+  }
+  
+  .searchbar-city {
+    margin-right: 10px;
+    width: 60%;
+  }
+  
+  .day-rain {
+    display: block;
+    font-size: 15px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  

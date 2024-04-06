@@ -1,0 +1,238 @@
+:root {
+--branding-color: #c000eb;
+--heading-font-family: 'Kaushan Script', cursive;
+--default-font-family: 'Cormorant Garamond', serif;
+--secondary-color: #f2fcfb;
+}
+
+body {
+   font-family: var(--default-font-family); 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.hero {
+    background: var(--secondary-color);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero p {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    color: #272142;
+    line-height: 1;
+}
+
+.hero h2 {
+    font-family: var(--heading-font-family);
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 2;
+}
+
+.content-container {
+    padding: 60px 20px;
+}
+
+.content h1 {
+    font-size: 64px;
+    line-height: 1.5;
+}
+
+.content h2 {
+    font-family: var(--default-font-family);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.content h3 {
+    line-height: 1.5;
+    margin: 20px 0 0;
+    font-family: var(--default-font-family);
+    font-size: 24px;
+}
+
+.content p {
+    font-size: 14px;
+}
+
+.content {
+    margin: 30px;
+}
+
+.about-section p {
+    font-family: var(--default-font-family);
+    font-size: 18px;
+}
+
+.btn-branding {
+    background:var(--branding-color);
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+}
+
+.btn-branding-outline {
+    border: 1px solid var(--branding-color);
+    color: var(--branding-color);
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.project-description {
+    padding: 120px 60px;
+}
+
+.logo {
+    max-height: 150px;
+}
+
+.small-logo {
+    display: block;
+    text-align: center;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+nav ul {
+    margin: 50px 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 40px;
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #272142;
+    transition: all 100ms ease-in-out;
+}
+
+nav a:hover, nav li.active a {
+    color: var(--branding-color);
+}
+
+footer {
+    margin: 60px 0;
+}
+
+footer .contact-box {
+    background: var(--secondary-color);
+    padding: 30px 120px;
+    border-radius: 10px;
+}
+
+footer .email-link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+
+footer .contact-box p {
+    margin: 0;
+}
+
+footer .email-link:hover{
+    color: var(--branding-color);
+}
+
+footer .social-links a{
+    margin: 0 20px;
+    color: var(--branding-color);
+    background-color: var(--secondary-color);
+    padding: 10px 14px;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: all 150ms ease-in-out;
+}
+
+footer .social-links a:hover {
+    color: white;
+    background: var(--branding-color);
+}
+
+@media (max-width: 764px) {
+    nav {
+        text-align: center;
+    }
+
+    .small-logo {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 900px){
+    h1  {
+        font-size: 44px;
+        line-height: 2;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    .content {
+        text-align: center;
+        padding: 0;
+    }
+   
+    .project-description{
+    padding: 0;
+    text-align: center; 
+    
+} 
+
+nav a {
+    font-size: 14px;
+}
+}

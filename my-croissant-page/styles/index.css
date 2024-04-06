@@ -1,0 +1,18 @@
+body {
+    background-color: #F8E8A6;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.links {
+    display: block;
+    text-align: center;
+}
+
+a {
+    color: green;
+    margin-left: 10px;
+    margin-right: 10px;
+}

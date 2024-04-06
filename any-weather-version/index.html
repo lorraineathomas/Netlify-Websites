@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Any Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/66b27bfaa7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <h1>Any&nbsp;&nbsp;&nbsp;&nbsp;Weather</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body">
+              <form>
+                <input class="city-buttons" type="submit" value="New York" />
+                <br />
+                <input
+                  class="city-buttons"
+                  type="submit"
+                  value="San Francisco"
+                />
+                <br />
+                <input class="city-buttons" type="submit" value="Atlanta" />
+                <br />
+                <input class="city-buttons" type="submit" value="Berlin" />
+                <br />
+                <input class="city-buttons" type="submit" value="Amsterdam" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-9 main">
+          <div class="card">
+            <div class="card-body">
+              <div class="card">
+                <div class="card-body">
+                  <form class="searchbar">
+                    <input
+                      class="searchbar-city"
+                      type="text"
+                      placeholder="Enter a city..."
+                    />
+                    <button class="searchbar-submit" type="submit">
+                      Search 🌎
+                    </button>
+                    <button class="searchbar-current" type="submit">
+                      Current city 📍
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <hr />
+              <div class="card results">
+                <div class="card-body">
+                  <h3 id="current-date-time">changeMe</h3>
+                  <h3 class="weather-icon">
+                    <span class="city-search"> Saint Albans, NY</span><br /><i
+                      class="fas fa-cloud"
+                    ></i>
+                  </h3>
+                  <h3 class="weather-temperature">
+                    <span class="degrees-number">98</span>&deg;<span
+                      class="degrees-letter"
+                      >F</span
+                    >
+                    <br />
+                    <button class="celcius-fahrenheit">&deg;C/&deg;F</button>
+                  </h3>
+
+                  <h3 class="chance-of-rain">
+                    <i class="fas fa-umbrella"></i> chance of rain: 50%
+                  </h3>
+                </div>
+              </div>
+              <hr />
+              <div class="card five-days">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col card first">
+                      <div class="card-body">
+                        <p class="five-days-first">MON</p>
+                        <span class="icon-first"
+                          ><i class="fas fa-bolt"></i
+                        ></span>
+                        <br />
+                        <h6 class="day-temperature">
+                          60<span>&deg;</span> / 55<span>&deg;</span>
+                        </h6>
+                        <br />
+                        <span class="day-rain"
+                          ><i class="fas fa-umbrella"></i> : 100%</span
+                        >
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="col card second">
+                      <div class="card-body">
+                        <p class="five-days-second">TUES</p>
+                        <span class="icon-second">
+                          <i class="fas fa-sun"></i>
+                        </span>
+                        <br />
+                        <h6 class="day-temperature">
+                          77<span>&deg;</span> / 60<span>&deg;</span>
+                        </h6>
+                        <br />
+                        <span class="day-rain"
+                          ><i class="fas fa-umbrella"></i> : 8%</span
+                        >
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="col card third">
+                      <div class="card-body">
+                        <p class="five-days-third">WED</p>
+                        <span class="icon-third">
+                          <i class="fas fa-cloud-rain"></i>
+                        </span>
+                        <br />
+                        <h6 class="day-temperature">
+                          55<span>&deg;</span> / 49<span>&deg;</span>
+                        </h6>
+                        <br />
+                        <span class="day-rain"
+                          ><i class="fas fa-umbrella"></i> : 20%</span
+                        >
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="col card fourth">
+                      <div class="card-body">
+                        <p class="five-days-fourth">THUR</p>
+                        <span class="icon-fourth">
+                          <i class="fas fa-cloud-showers-heavy"></i>
+                        </span>
+                        <br />
+                        <h6 class="day-temperature">
+                          62<span>&deg;</span> / 53<span>&deg;</span>
+                        </h6>
+                        <br />
+                        <span class="day-rain"
+                          ><i class="fas fa-umbrella"></i> : 100%</span
+                        >
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="col card fifth">
+                      <div class="card-body">
+                        <p class="five-days-fifth">FRI</p>
+                        <span class="icon-fifth">
+                          <i class="fas fa-cloud-sun"></i>
+                        </span>
+                        <br />
+                        <h6 class="day-temperature">
+                          74<span>&deg;</span> / 61<span>&deg;</span>
+                        </h6>
+                        <br />
+                        <span class="day-rain"
+                          ><i class="fas fa-umbrella"></i> : 15%</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+  <footer><a href="https://github.com/lorrainethomas-1/Weather-App" target="_blank">Coded by </a> by Lorraine Thomas</footer>
+</html>
